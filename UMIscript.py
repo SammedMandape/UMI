@@ -123,6 +123,8 @@ for key in filedict:
     '''
     Searches for primer and anchor in reads and pulls out DNA fragment between
     them.
+    @return - Output file with information about locus, STRseq fragment, UMI,
+        primer, anchor, and respective read countss
     '''
     file_fastq_R1 = key
     file_fastq_R2 = filedict[key]
