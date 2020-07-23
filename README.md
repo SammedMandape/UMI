@@ -1,6 +1,4 @@
-# UMI
-Unique Molecular Identifiers 
-
+# UMI (Unique Molecular Identifiers)
 
 Documentation:
 
