@@ -1,5 +1,10 @@
+<!-- PROJECT TITLE -->
 # UMI (Unique Molecular Identifiers)
---------------------------------------
+
+<!-- TABLE OF CONTENTS -->
+## Table of contents
+* [About the Project](#about-the-project)
+
 
 ## Documentation:
 
