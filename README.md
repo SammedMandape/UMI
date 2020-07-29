@@ -7,7 +7,11 @@ UMIs for mixture interpretation
 * [About the Project](#about-the-project)
 * [Usage](#usage)
 
+<!-- ABOUT THE PROJECT -->
+## About the project
 
+
+<!-- Usage -->
 ## Usage
 
 Create a directory with all the sample fastq files.
