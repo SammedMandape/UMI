@@ -1,5 +1,6 @@
 <!-- PROJECT TITLE -->
 # UMI (Unique Molecular Identifiers)
+UMIs for mixture interpretation
 
 <!-- TABLE OF CONTENTS -->
 ## Table of contents
