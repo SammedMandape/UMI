@@ -4,9 +4,10 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of contents
 * [About the Project](#about-the-project)
+* [Usage](#usage)
 
 
-## Documentation:
+## Usage
 
 Create a directory with all the sample fastq files.
 Also add to this directory a file that has primer sequence information along with locus, chr, genomic position, strand, and anchor sequence. This information will be used to pull the DNA fragment (containing STR sequence) between primer and anchor. 
