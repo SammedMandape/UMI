@@ -1,5 +1,5 @@
 <!-- PROJECT TITLE -->
-# UMI (Unique Molecular Identifiers)
+# Unique Molecular Identifier (UMI)
 UMIs for mixture interpretation
 
 <!-- TABLE OF CONTENTS -->
@@ -9,7 +9,7 @@ UMIs for mixture interpretation
 
 <!-- Introduction -->
 ## Introduction
-The scripts are used to extract the DNA fragments containing STR sequence between gene specific primer and anchor sequence from paired-end fastq files. The DNA fragment composition is shown in figure 1. The 11 nucleotide (nt) long common sequence (CS) was used as a marker to identify the 12nt long UMI sequence from read2.
+The scripts are used to extract the DNA fragments containing STR sequence between gene specific primer and anchor sequence from paired-end fastq files. The DNA fragment composition is shown in figure 1. The known 11 nucleotide (nt) long common sequence (CS) is used as a marker to identify the 12nt long UMI sequence from read2.
 
 <p align="center">
 <img src="images/DNAfragComp.png" alt="Image" width="385" height="265">
