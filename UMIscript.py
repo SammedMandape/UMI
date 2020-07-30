@@ -16,6 +16,9 @@ import strfuzzy
 directory = "/data"
 os.chdir(directory)
 
+#input primer file
+file_primer = "PrimedAnchors.txt"
+
 complement = {'A' : 'T', 'C' : 'G', 'T' : 'A', 'G' : 'C'}
 
 def reverse_complement(seq):
@@ -110,8 +113,7 @@ def dict_for_fastq(file_fastq):
     return dict_fastq_empty
 
 
-#input primer file
-file_primer = "PrimedAnchors.txt"
+# input primer file to functions
 dict_primer = dict_for_primer(file_primer)
 
 
