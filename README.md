@@ -12,7 +12,7 @@ UMIs for mixture interpretation
 The scripts are used to extract the DNA fragments containing STR sequence between gene specific primer and anchor sequence from paired-end fastq files. The DNA fragment composition is shown in figure 1. The 11 nucleotide (nt) long common sequence (CS) was used as a marker to identify the 12nt long UMI sequence from read2.
 
 <p align="center">
-<img src="/Users/Sammed/Desktop/DNAfragComp.png" alt="Image" width="385" height="265">
+<img src="images/DNAfragComp.png" alt="Image" width="385" height="265">
 </p>
 
 
