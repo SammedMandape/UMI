@@ -24,7 +24,7 @@ The scripts are used to extract the DNA fragments containing STR sequence betwee
 * To this directory add a file that has primer sequence information along with locus, chr, genomic position, strand, and anchor sequence. This information will be used to pull the DNA fragment (containing STR sequence) between primer and anchor.
 
 * Add path of this directory to the variable 'directory' in UMIscript.py
-> directory = "path/of/directory/of/fastq/files"
+> directory = "path/to/directory/of/fastq/files"
 
 * 
 
