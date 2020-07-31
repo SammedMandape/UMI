@@ -12,7 +12,7 @@ UMIs for mixture interpretation
 The scripts are used to extract the DNA fragments containing STR sequence between gene specific primer and anchor sequence from paired-end fastq files. The DNA fragment composition is shown in figure 1. The 11 nucleotide (nt) long common sequence (CS) was used as a marker to identify the 12nt long UMI sequence from read2. Flowchart of the python implementation is represented in figure 2. 
 
 <p align="center">
-<img src="images/DNAfragComp.png" alt="Image" width="385" height="265">
+<img src="images/DNAfragComp.png" alt="Image">
 <p style="text-align: center;"><strong>Figure 1. </strong> An illustration of QIAseq DNA fragment composition. Read1 is in the order of locus-specific primer -> targeted DNA sequence -> common sequence in all reads -> unique molecular identifier while read2 begins with UMI followed by CS and targeted DNA sequence.
 </p>
 
