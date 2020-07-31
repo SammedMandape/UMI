@@ -36,6 +36,6 @@ The scripts are used to extract the DNA fragments containing STR sequence betwee
 > file_primer = "path/to/primerfile/nameOfPrimerFile"
 
 * UMIscript.py uses strfuzzy.py to search for anchor sequence with fuzzines. Default settings allow for fuzziness of a single nucleotide base. This setting can be changed by changing the numeric value of the variable 'fuzz' to desired fuzziness (the line of code is shown below). strfuzzy.py should be in the same directory where UMIscript.py is located.
-> anchorIndex = strfuzzy.fuzzyFind(readR1, anchor, fuzz=<numeric value of desired fuzziness>)
+> anchorIndex = strfuzzy.fuzzyFind(readR1, anchor, fuzz=\<numeric value of desired fuzziness\>)
 
 UMIscript.py will loop through all the fastq files and create output files with information about locus, and their respecitve DNA fragment (containing STR sequence), UMI sequence, primer, anchor sequence, and the count of DNA fragment.
