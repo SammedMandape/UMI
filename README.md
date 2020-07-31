@@ -27,7 +27,7 @@ The scripts are used to extract the DNA fragments containing STR sequence betwee
 > directory = "path/to/directory/of/fastq/files"
 
 * Add primer file name with path to the variable 'file_primer' in UMIscript.py
-> file_primer = "path/to/primerfile/nameofprimer"
+> file_primer = "path/to/primerfile/nameOfPrimerFile"
 
 * UMIscript.py uses strfuzzy.py to search for anchor sequence with fuzzines. Default settings allow for fuzziness of a single nucleotide base. This setting can be changed by changing the numeric value of the variable 'fuzz' to desired fuzziness (the line of code is shown below). strfuzzy.py should be in the same directory where UMIscript.py is located.
 > anchorIndex = strfuzzy.fuzzyFind(readR1, anchor, fuzz=<numeric value of desired fuzziness>)
