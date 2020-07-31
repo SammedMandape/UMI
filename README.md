@@ -18,7 +18,7 @@ The scripts are used to extract the DNA fragments containing STR sequence betwee
 
 
 <p align="center">
-<img src="images/Flowchart_1_1.jpg" alt="Image">
+<img src="images/Algo_flowchart.jpg" alt="Image">
 <p style="text-align: center;"><strong>Figure 2. </strong> A representation of implementation of python script UMIscript.py. The inputs to this script are paired-end fastq files (read1, read2) and primer file(locus, chr, pos, strand, primer sequence, anchor sequence). The outputs are files for each sample with information about the targeted DNA sequence for a locus-specific primer along with respective UMI, anchor, and count.
 </p>
 </p>
