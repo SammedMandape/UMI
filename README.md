@@ -1,15 +1,18 @@
 <!-- PROJECT TITLE -->
-# UMI (Unique Molecular Identifiers)
+# Unique Molecular Identifiers (UMIs)
 UMIs for mixture interpretation
 
 <!-- TABLE OF CONTENTS -->
 ## Table of contents
 * [Introduction](#introduction)
-* [Usage](#usage)
+* [Quick start](#quick-start)
+* [Overview of algorithm](#Overview-of-algorithm)
+* [Funding](#Funding)
+
 
 <!-- Introduction -->
 ## Introduction
-The scripts are used to extract the DNA fragments containing STR sequence between gene specific primer and anchor sequence from paired-end fastq files. The DNA fragment composition is shown in figure 1. The 11 nucleotide (nt) long common sequence (CS) was used as a marker to identify the 12nt long UMI sequence from read2. Flowchart of the python implementation is represented in figure 2. 
+The scripts are used to extract the DNA fragments containing STR sequence between gene specific primer and anchor sequence from paired-end fastq files. The DNA fragment composition is shown in figure 1. The 11 nucleotide (nt) long common sequence (CS) was used as a marker to identify the 12nt long UMI sequence from read2.
 
 <p align="center">
 <img src="images/DNAfragComp.png" alt="Image">
@@ -17,25 +20,34 @@ The scripts are used to extract the DNA fragments containing STR sequence betwee
 </p>
 
 
+<!-- Quick start -->
+## Quick start  
+* Clone this repository and cd into the directory
+```
+git clone https://github.com/SammedMandape/UMI.git
+cd UMI
+```
+
+* Create a data directory and copy paired-end fastq files for all samples
+* Create a tab separated file named "PrimedAnchors.txt" with information (in the same order as mentioned) about all loci, and their respective chromosome, genomic start position, strand (0 or 1), primer sequence, and anchor sequence
+* Save and run the python script
+```
+/usr/bin/python3 UMIscript.py
+```
+
+* UMIscript.py will loop through all the fastq files and create output files in the same directory with information about locus, and their respective DNA fragment (containing STR sequence), UMI sequence, primer, anchor sequence, and the count of DNA fragment.
+
+
+<!-- Overview of algorithm -->
+## Overview of algorithm
+UMIscript.py, along with fastq files and PrimedAnchors.txt as inputs, uses python script strfuzzy.py by [Benjamin Crysup](https://github.com/Benjamin-Crysup). strfuzzy searches for anchor sequence with fuzziness. Default setting allow for one mismatch when searching for anchor sequence. This setting can be changed by varying the variable 'fuzz' in UMIscript to desired number of mismatches allowed when searching for anchor sequence (the line of code is shown below). Flowchart describing the python implementation is represented in figure 2.
+
+> anchorIndex = strfuzzy.fuzzyFind(readR1, anchor, fuzz=<numeric value of desired fuzziness>)
+
 <p align="center">
 <img src="images/Algo_flowchart.jpg" alt="Image">
 <p style="text-align: center;"><strong>Figure 2. </strong> A representation of implementation of python script UMIscript.py. The inputs to this script are paired-end fastq files (read1, read2) and primer file(locus, chr, pos, strand, primer sequence, anchor sequence). The outputs are files for each sample with information about the targeted DNA sequence for a locus-specific primer along with respective UMI, anchor, and count.
 </p>
 </p>
 
-<!-- Usage -->
-## Usage
-
-* Create a directory with all the sample fastq files.
-* To this directory add a file that has primer sequence information along with locus, chr, genomic position, strand, and anchor sequence. This information will be used to pull the DNA fragment (containing STR sequence) between primer and anchor.
-
-* Add path of this directory to the variable 'directory' in UMIscript.py
-> directory = "path/to/directory/of/fastq/files"
-
-* Add primer file name with path to the variable 'file_primer' in UMIscript.py
-> file_primer = "path/to/primerfile/nameOfPrimerFile"
-
-* UMIscript.py uses strfuzzy.py to search for anchor sequence with fuzzines. Default settings allow for fuzziness of a single nucleotide base. This setting can be changed by changing the numeric value of the variable 'fuzz' to desired fuzziness (the line of code is shown below). strfuzzy.py should be in the same directory where UMIscript.py is located.
-> anchorIndex = strfuzzy.fuzzyFind(readR1, anchor, fuzz=\<numeric value of desired fuzziness\>)
-
-UMIscript.py will loop through all the fastq files and create output files with information about locus, and their respecitve DNA fragment (containing STR sequence), UMI sequence, primer, anchor sequence, and the count of DNA fragment.
+## Funding
