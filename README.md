@@ -42,7 +42,7 @@ cd UMI
 ## Overview of algorithm
 UMIscript.py, along with fastq files and PrimedAnchors.txt as inputs, uses python script strfuzzy.py by [Benjamin Crysup](https://github.com/Benjamin-Crysup). strfuzzy searches for anchor sequence with fuzziness. Default setting allow for one mismatch when searching for anchor sequence. This setting can be changed by varying the variable 'fuzz' in UMIscript to desired number of mismatches allowed when searching for anchor sequence (the line of code is shown below). Flowchart describing the python implementation is represented in figure 2.
 
-> anchorIndex = strfuzzy.fuzzyFind(readR1, anchor, fuzz=<numeric value of desired fuzziness>)
+> anchorIndex = strfuzzy.fuzzyFind(readR1, anchor, fuzz=\<numeric value of desired fuzziness\>)
 
 <p align="center">
 <img src="images/Algo_flowchart.jpg" alt="Image">
