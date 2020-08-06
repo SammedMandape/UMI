@@ -38,7 +38,7 @@ The scripts are used to extract the DNA fragments containing STR sequence betwee
 * UMIscript.py uses strfuzzy.py to search for anchor sequence with fuzzines. Default settings allow for fuzziness of a single nucleotide base. This setting can be changed by changing the numeric value of the variable 'fuzz' to desired fuzziness (the line of code is shown below). strfuzzy.py should be in the same directory where UMIscript.py is located.
 > anchorIndex = strfuzzy.fuzzyFind(readR1, anchor, fuzz=\<numeric value of desired fuzziness\>)
 
-* Finally, run the python script
+* Save and run the python script
 ```
 python3 UMIscript.py
 ```
