@@ -28,7 +28,7 @@ git clone https://github.com/SammedMandape/UMI.git
 cd UMI
 ```
 
-* Create a data directory and copy paired-end fastq files for all samples
+* Create a data directory and copy paired-end fastq files for all samples into this directory
 * Create a tab separated file named "PrimedAnchors.txt" with information (in the same order as mentioned) about all loci, and their respective chromosome, genomic start position, strand (0 or 1), primer sequence, and anchor sequence
 * Save and run the python script
 ```bash
