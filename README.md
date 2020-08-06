@@ -6,8 +6,8 @@ UMIs for mixture interpretation
 ## Table of contents
 * [Introduction](#introduction)
 * [Quick start](#quick-start)
-* [Overview of algorithm](#Overview-of-algorithm)
-* [Funding](#Funding)
+* [Overview of algorithm](#overview-of-algorithm)
+* [Funding](#funding)
 
 
 <!-- Introduction -->
@@ -23,7 +23,7 @@ The scripts are used to extract the DNA fragments containing STR sequence betwee
 <!-- Quick start -->
 ## Quick start  
 * Clone this repository and cd into the directory
-```
+```bash
 git clone https://github.com/SammedMandape/UMI.git
 cd UMI
 ```
@@ -31,7 +31,7 @@ cd UMI
 * Create a data directory and copy paired-end fastq files for all samples
 * Create a tab separated file named "PrimedAnchors.txt" with information (in the same order as mentioned) about all loci, and their respective chromosome, genomic start position, strand (0 or 1), primer sequence, and anchor sequence
 * Save and run the python script
-```
+```bash
 /usr/bin/python3 UMIscript.py
 ```
 
@@ -50,6 +50,4 @@ UMIscript.py, along with fastq files and PrimedAnchors.txt as inputs, uses pytho
 </p>
 </p>
 
-
 ## Funding
-
