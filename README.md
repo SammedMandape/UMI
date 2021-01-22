@@ -54,7 +54,7 @@ UMIscript.py, along with fastq files and PrimedAnchors.txt as inputs, uses pytho
 ## Paper and Citation
 Methods are described in the paper: [Woerner AE, Mandape SN, King JL, Muenzler M, Crysup B, Budowle B. Reducing noise and stutter in short tandem repeat loci with unique molecular identifiers. Forensic Science International: Genetics. 2021; Volume 51.](http://www.sciencedirect.com/science/article/pii/S1872497320302313)
 https://doi.org/10.1016/j.fsigen.2020.102459.
-(http://www.sciencedirect.com/science/article/pii/S1872497320302313)
+
 
 ## Funding
 This work was supported in part by award no. 2018-DU-BX-0177, awarded by the National Institute of Justice, Office of Justice Programs, U.S. Department of Justice. The opinions, findings, and conclusions or recommendations expressed in this publication are those of the authors and do not necessarily reflect those of the U.S. Department of Justice.
