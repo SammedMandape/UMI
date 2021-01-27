@@ -1,6 +1,6 @@
 <!-- PROJECT TITLE -->
 # Unique Molecular Identifiers (UMIs)
-UMIs for mixture interpretation
+UMIs to reduce noise and stutter in short tandem repeat loci. 
 
 <!-- TABLE OF CONTENTS -->
 ## Table of contents
